@@ -11,6 +11,9 @@ module.exports = {
         background: "var(--background)",
         foreground: "var(--foreground)",
       },
+      backgroundImage: {
+        'plantsplash' : "url('/assets/graphics/leaf-pattern-seamless-background-half-size.jpg')",
+      }
     },
   },
   plugins: [],
