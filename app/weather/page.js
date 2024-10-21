@@ -14,8 +14,9 @@ export default async function Page() {
   return (
     <>
     <Title variant='secondary' className={" text-green-800 p-2"} content= { "Probability of rain for the next 7 days"}></Title>
-
+    <div className=' w-full md:w-1/2 m-auto items-center justify-center'>
     <Graph  y_axis = {y} x_axis = {x} x_labels={["today","+1","+2","+3","+4","+5","+6"]}/>
+    </div>
     </>
   )
 }
