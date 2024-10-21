@@ -11,26 +11,48 @@ export default async function Page({params}) {
    let moisturevalues = []
    let sampletimes = []
    let plantName = plantdata[0].plant_name
+
+   plantName =plantName.charAt(0).toUpperCase() + plantName.slice(1)
+   let firstMonitored = plantdata[0].sample_time
+   let averageMoisture = 0
+   firstMonitored = firstMonitored.replace('T', ' ').slice(2, 19)
    plantdata.forEach(moisturesample => {
 
     moisturevalues.push(moisturesample.moisture)
     let sampletimeformated = moisturesample.sample_time
+
     sampletimeformated = sampletimeformated.replace('T', ' ').slice(2, 19)
     sampletimes.push(sampletimeformated)
+    averageMoisture = averageMoisture + moisturesample.moisture
     
    })
+   averageMoisture = averageMoisture / plantdata.length
 
 
 
     return (
         <>
         <Title className = " text-green-800 p-2"content= { `Collected soil moisture readings`} />
-        <ParagraphBox content = {`The most recent data for ${plantName}`}/>
-        
+        <div className="flex flex-row gap-2 flex-wrap items-center align-middle">
+        <ParagraphBox className={"m-auto"}>
+        <Title content={plantName}/>
+        {plantName} has been monitored since: {firstMonitored}.<br/>
+        The avergage moisture content of their soil since then is: {averageMoisture.toFixed(0)}%<br/>
+        <br/>
+        Their 7 most recent data points taken for {plantName} are displayed on the accompanying graph.
+
+        <br/>
+
+        {averageMoisture > moisturevalues[moisturevalues.length-1] ? `${plantName} is drier than they have been on average, you should probably water them.` : `${plantName} has above average moisture content in their soil.`}
+        <br/>
+
+         
+
+        </ParagraphBox>
 
         <Graph  y_axis = {moisturevalues} x_axis = {sampletimes} x_labels={sampletimes} />
 
-
+        </div>
         
         </>
 

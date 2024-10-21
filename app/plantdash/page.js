@@ -14,7 +14,7 @@ export default async function Page() {
     return (
         <>
           <Title variant = "secondary" className = " text-green-800 p-2" content= { "Browse Your Plant Profiles"} />
-          <ParagraphBox content={"Mouse over a profile to see the latest soil data. Click a plant for more details."}/>
+          <ParagraphBox>Mouse over a profile to see the latest soil data. Click a plant for more details</ParagraphBox>
           <CardContainer>
             {plantdata.map( (plant) =>
               {

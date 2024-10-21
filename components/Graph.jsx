@@ -2,7 +2,7 @@ import React from 'react'
 
 export default function Graph({x_axis,y_axis, x_labels, y_labels}) {
   return (
-    <div className=" flex w-4/6 flex-nowrap flex-row py-10 self-center">
+    <div className=" flex w-4/6 flex-nowrap flex-row py-10 m-auto">
         <div className=" flex w-12 flex-nowrap flex-col justify-between items-end pr-2">
             <div>100%</div>
             <div className='pb-10'>0%</div>
