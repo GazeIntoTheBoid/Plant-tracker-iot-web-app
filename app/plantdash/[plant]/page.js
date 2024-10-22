@@ -37,9 +37,9 @@ export default async function Page({params}) {
         <ParagraphBox className={"m-auto"}>
         <Title content={plantName}/>
         {plantName} has been monitored since: {firstMonitored}.<br/>
-        The avergage moisture content of their soil since then is: {averageMoisture.toFixed(0)}%<br/>
+        The average moisture content of their soil since then is: {averageMoisture.toFixed(0)}%<br/>
         <br/>
-        Their 7 most recent data points taken for {plantName} are displayed on the accompanying graph.
+        The 7 most recent data points taken for {plantName} are displayed on the accompanying graph.
 
         <br/>
 

@@ -18,8 +18,8 @@ const [objectIsHovered,setObjectIsHovered] = useState(false)
         <DisplayPic imagePath = {plant.plant_pic_url} className={"m-3"} />
         
                 <div className='flex flex-col justify-center items-center m-3'>
-                    <Title variant='secondary' content = {plant.plant_name} className={""}/>
-                    <Title variant = "subTitle" content = {plant.plant_breed}/>
+                    <Title variant='secondary' content = {plant.plant_name} className={"text-white"}/>
+                    <Title variant = "subTitle" content = {plant.plant_breed} className={"text-white"}/>
                 </div>
                 
                     <div className={`flex flex-col items-center justify-center absolute w-64 h-36 bg-opacity-80 backdrop-blur-sm bg-green-100 mt-2 z-10 rounded-lg transition-opacity duration-200 ${objectIsHovered ? 'opacity-100' : 'opacity-0'}`}>
