@@ -26,5 +26,5 @@ this is presented as statistics and the most recent moisture sample data is pres
 
 The backend of the website is split between Next.js and node-red. The node-red server provides API end points for the app to retrieve data from the database.
 ![api endpoints](https://github.com/user-attachments/assets/664dbfde-d615-473b-a08f-a4570e709188)
-The Node-red server also handles messages received from The Things network MQTT broker. It parses these messages and inserts the moisture readings and what plant they pertain to into an external database. 
+The Node-red server also handles messages received from The Things network MQTT broker. It parses these messages and inserts the received data as new entries into an external database. 
 ![MQTT listener](https://github.com/user-attachments/assets/f95d0d77-35d4-4965-95fe-d8034d29054b)
