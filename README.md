@@ -5,6 +5,7 @@ This project is a full stack single page web app connected to an IoT device that
 ## The Web app frontend
 
 This application is made of three primary pages
+
 **The plant catalogue:** 
 populated with plant profiles from the data base. Basic plant state information is provided on mouse over and clicking a plant routes you to its details page.
 
