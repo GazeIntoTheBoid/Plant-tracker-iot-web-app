@@ -1,8 +1,8 @@
-## PLAPP - PLant tracking APP
+# PLAPP - PLant tracking APP
 
 This project is a full stack single page web app connected to an IoT device that logs soil moisture readings. It is intended to improve the condition and quality of plants connected to the app and make it easy for the end user to check their soil condition at a glance. The application also provides a localised precipitation forecast to inform future watering needs.
 
-# The Web app frontend
+## The Web app frontend
 
 This application is made of three primary pages
 **The plant catalogue:** 
