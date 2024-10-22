@@ -24,12 +24,13 @@ populated with plant profiles from the data base. Basic plant state information 
 ### The weather forecast:
 Based on data fetched from open-meteo.com, a 7 day precipitation forecast is presented graphically.
 
+
 ### Plant details: (dynamic route)
 Each plant can be selected to see it's data history and profile information in detail.
 this is presented as statistics and the most recent moisture sample data is presented as a graph.
 
 <div align="center">
-<img src="https://github.com/user-attachments/assets/0bca29e9-cee1-4d2d-aa32-1a57dfbe0cbe)" />
+<img src="https://github.com/user-attachments/assets/55cb7621-d750-46b2-b6b9-c3f7cf9567b8" />
 </div>
 
 
