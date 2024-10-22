@@ -1,36 +1,19 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+## PLAPP - PLant tracking APP
 
-## Getting Started
+This project is a full stack single page web app connected to an IoT device that logs soil moisture readings. It is intended to improve the condition and quality of plants connected to the app and make it easy for the end user to check their soil condition at a glance. The application also provides a localised precipitation forecast to inform future watering needs.
 
-First, run the development server:
+##The Web app frontend
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+This application is made of three primary pages
+**The plant catalogue:** 
+populated with plant profiles from the data base. Basic plant state information is provided on mouse over and clicking a plant routes you to its details page.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+**The weather forecast:** 
+collected via an API request to ...
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+**Plant details:** (dynamic route)
+Each plant can be selected to see it's data history and profile information in detail.
+this is presented as statistics and the most recent moisture sample data is presented as a graph.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+The frontend of the app is built and rendered server side using next.js. Styling is done inline with tailwind CSS.
+The backend of the website is split between Next.js and node-red. Th node-red server provides API end points for the app to retrieve data from the database.
