@@ -21,7 +21,7 @@ populated with plant profiles from the data base. Basic plant state information 
 <img src="https://github.com/user-attachments/assets/c678f81a-b8cf-496b-9fd0-0a02d6cd5909" />
 </div>
 ### The weather forecast:
-collected via an API request to ...
+Based on data fetched from open-meteo.com, a 7 day precipitation forecast is presented graphically.
 
 ### Plant details: (dynamic route)
 Each plant can be selected to see it's data history and profile information in detail.
@@ -39,3 +39,13 @@ The Node-red server also handles messages received from The Things network MQTT 
 <div align="center">
 <img src="https://github.com/user-attachments/assets/f95d0d77-35d4-4965-95fe-d8034d29054b" />
 </div>
+
+
+## Future work
+<ul>
+  <li>The app currently only supports my own plants, implementing a user registration / login would be the first step to supporting user accounts tracking their own plant catalogues</li>
+  <li>Email alert notifications based on plant dryness and the future forecast</li>
+  <li>incremental SSR implementation - currently nothing is cached.</li>
+  <li>Better data visualisation - the current implementation is very limited. Using a graphing library would allow the user to explore historical data.</li>
+</ul>
+
