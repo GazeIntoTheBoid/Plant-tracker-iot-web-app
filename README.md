@@ -2,7 +2,7 @@
 
 This project is a full stack single page web application connected to an IoT device that logs soil moisture readings. It is intended to improve the condition and quality of plants connected to the app by making it easy for the end user to check their soil condition at a glance. The application also provides a localised precipitation forecast to inform future watering needs.
 <div align = "center">
-![stackdiagram](https://github.com/user-attachments/assets/48494767-d7dd-4009-953f-59c4373cbcca)
+<img src="https://github.com/user-attachments/assets/48494767-d7dd-4009-953f-59c4373cbcca2"/>
 </div>
 
 
