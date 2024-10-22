@@ -8,8 +8,8 @@ This project is a full stack single page web application connected to an IoT dev
 
 
 
-## The Web app frontend
-The frontend of the app is built and rendered server side using next.js. Styling is done inline with tailwind CSS.
+## The Web app front end
+The front end of the app is built and rendered server side using next.js. Styling is done inline with tailwind CSS.
 
 <img src="https://github.com/user-attachments/assets/88b20465-8d90-4ddc-b6a9-cf23ed0f1b57" />
 
