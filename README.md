@@ -9,6 +9,8 @@ This application is made of three primary pages
 
 **The plant catalogue:** 
 populated with plant profiles from the data base. Basic plant state information is provided on mouse over and clicking a plant routes you to its details page.
+![plapp mouse over](https://github.com/user-attachments/assets/f99e12a3-127d-4429-b077-65669a5a2c72)
+
 
 **The weather forecast:** 
 collected via an API request to ...
@@ -19,3 +21,5 @@ this is presented as statistics and the most recent moisture sample data is pres
 
 The frontend of the app is built and rendered server side using next.js. Styling is done inline with tailwind CSS.
 The backend of the website is split between Next.js and node-red. Th node-red server provides API end points for the app to retrieve data from the database.
+![api endpoints](https://github.com/user-attachments/assets/664dbfde-d615-473b-a08f-a4570e709188)
+![MQTT listener](https://github.com/user-attachments/assets/f95d0d77-35d4-4965-95fe-d8034d29054b)
