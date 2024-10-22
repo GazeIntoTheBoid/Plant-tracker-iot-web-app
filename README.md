@@ -20,6 +20,7 @@ populated with plant profiles from the data base. Basic plant state information 
 <div align="center">
 <img src="https://github.com/user-attachments/assets/c678f81a-b8cf-496b-9fd0-0a02d6cd5909" />
 </div>
+
 ### The weather forecast:
 Based on data fetched from open-meteo.com, a 7 day precipitation forecast is presented graphically.
 
@@ -27,12 +28,17 @@ Based on data fetched from open-meteo.com, a 7 day precipitation forecast is pre
 Each plant can be selected to see it's data history and profile information in detail.
 this is presented as statistics and the most recent moisture sample data is presented as a graph.
 
+<div align="center">
+<img src="https://github.com/user-attachments/assets/0bca29e9-cee1-4d2d-aa32-1a57dfbe0cbe)" />
+</div>
+
 
 ## App Backend
 
 The backend of the website is split between Next.js and node-red. The node-red server provides API end points for the app to retrieve data from the database.
 <div align="center">
 <img align = "center" src="https://github.com/user-attachments/assets/664dbfde-d615-473b-a08f-a4570e709188" />
+
 </div>
 The Node-red server also handles messages received from The Things network MQTT broker. It parses these messages and inserts the received data as new entries into an external database.
 <div align="center">
