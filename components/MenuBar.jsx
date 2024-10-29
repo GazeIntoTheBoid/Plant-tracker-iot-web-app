@@ -13,6 +13,10 @@ const PageContentList = [{
   "link": "/",
   "Name": "ABOUT"
 },
+{
+  "link": "/login",
+  "Name": "LOG IN"
+},
 ]
 
 
